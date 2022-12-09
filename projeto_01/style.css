@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  text-align: center;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+#container {
+  width: 592px;
+  margin: auto;
+}
+
+#container img {
+  margin-bottom: 32px;
+}
+
+#container h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 49px;
+  line-height: 56px;
+
+  margin: 0 0 22px;
+}
+
+#container p {
+  color: #7d7987;
+  line-height: 28px;
+
+  margin-top: 0px;
+  margin-bottom: 32px;
+}
+
+span {
+  color: #ff9900;
+}
+
+h1 span {
+  font-weight: bold;
+}
+
+#pontos_laranja {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
+#line {
+  width: 568px;
+  border-top: 1px #eceff2 solid;
+  margin-bottom: 8px;
+}
+
+footer {
+  margin-bottom: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  padding-top: 8px;
+}
+
+footer a + a {
+  margin-left: 28px;
+}
