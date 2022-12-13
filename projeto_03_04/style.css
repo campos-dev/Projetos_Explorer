@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light-bg-color: #eff1ff;
+  --purple-bg-color: #8e9aaf;
+  --pink-stripe: #cbc0d3;
+  --light-pink: #feeafa;
+  --purple-font: #4a4e69;
+  --dark-purple-text: #23053a;
+  --white: #ffffff;
+
+  font-size: 6.25%;
+}
+
+body {
+  background-color: var(--light-bg-color);
+  font-family: "Palanquin", sans-serif;
+  font-weight: 400;
+  font-size: 14.5rem;
+  line-height: 20rem;
+
+  color: var(--dark-purple-text);
+}
+
+header {
+  height: 280rem;
+  background-color: var(--purple-bg-color);
+
+  display: flex;
+  flex-direction: column;
+}
+
+header img {
+  height: 137rem;
+  margin: 32rem 0;
+}
+
+header h1 {
+  font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  font-size: 40rem;
+  line-height: 34rem;
+
+  letter-spacing: 0.05em;
+
+  color: var(--white);
+
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+  background-color: var(--pink-stripe);
+
+  padding: 8rem 0;
+  text-align: center;
+}
+
+header p {
+  display: none;
+}
+
+main {
+  padding: 40rem 0 60rem;
+  margin: auto;
+  max-width: 320rem;
+}
+
+main > p:first-child {
+  padding-bottom: 40rem;
+
+  font-family: "Roboto", sans-serif;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+main img {
+  padding-bottom: 32rem;
+  animation: opacity-pic 500ms ease-in-out;
+}
+
+main img:nth-of-type(5),
+main img:nth-of-type(6),
+main p:nth-of-type(6),
+main p:nth-of-type(7) {
+  display: none;
+}
+
+main p:not(:first-child) {
+  position: relative;
+  top: calc(32rem + 16rem);
+  left: 190rem;
+
+  font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  font-size: 15rem;
+
+  letter-spacing: 0.05em;
+
+  color: var(--purple-font);
+  text-transform: uppercase;
+
+  background-color: var(--light-pink);
+  max-width: fit-content;
+  padding: 7rem 25rem;
+  border-radius: 20px;
+  z-index: 1;
+
+  animation: letter-anim 600ms ease reverse backwards;
+}
+
+footer {
+  display: none;
+
+  font-family: "Opens sans", sans-serif;
+  font-weight: 400;
+  font-size: 14rem;
+  line-height: 28rem;
+
+  color: var(--purple-font);
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--purple-font);
+}
+
+@keyframes opacity-pic {
+  0% {
+    opacity: 0;
+    scale: 1.2;
+  }
+  100% {
+    opacity: 100%;
+    scale: 1;
+  }
+}
+
+@keyframes letter-anim {
+  0% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 750px) {
+  body {
+    display: grid;
+    grid-template:
+      "header main"
+      "header footer";
+    grid-template-columns: 300rem 1fr;
+  }
+
+  header {
+    height: 100%;
+    grid-area: header;
+    background-color: var(--purple-bg-color);
+  }
+
+  header p {
+    line-height: 20px;
+    color: var(--white);
+    padding-top: 32rem;
+    width: 275rem;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  main p {
+    display: none;
+  }
+
+  main {
+    margin: auto;
+    grid-area: main;
+    display: grid;
+    grid-template:
+      "paleta shake"
+      "sorvete shake"
+      "paleta_2 picole";
+
+    grid-gap: 32rem;
+    padding: 30rem 0 -0;
+  }
+
+  main > p:first-child {
+    display: none;
+  }
+
+  main img {
+    max-width: 160rem;
+    padding-bottom: 0;
+  }
+
+  main img:nth-of-type(1) {
+    grid-area: paleta;
+  }
+
+  main img:nth-of-type(2) {
+    grid-area: shake;
+  }
+
+  main img:nth-of-type(3) {
+    grid-area: sorvete;
+  }
+
+  main img:nth-of-type(4) {
+    grid-area: picole;
+    position: relative;
+    top: -55rem;
+  }
+  main img:nth-of-type(5) {
+    display: block;
+    grid-area: paleta_2;
+  }
+
+  main img:nth-of-type(6) {
+    display: none;
+    grid-area: picole_2;
+  }
+
+  footer {
+    display: grid;
+    grid-area: footer;
+    margin: auto;
+    padding: 0 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    grid-template-columns: 375rem 1fr;
+  }
+
+  main {
+    margin: 0;
+    grid-area: main;
+    display: grid;
+    grid-template:
+      "paleta shake sorvete"
+      "picole shake picole_2"
+      "picole paleta_2 picole_2";
+
+    grid-gap: 32rem;
+    padding: 30rem 100rem 0;
+  }
+  main img {
+    max-width: 220rem;
+  }
+
+  main img:nth-of-type(4) {
+    top: 0;
+  }
+
+  main img:nth-of-type(6) {
+    display: block;
+  }
+
+  footer {
+    padding: 20rem 0;
+  }
+}
