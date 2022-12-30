@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 6.25%;
+}
+
+.bg_screen1 {
+  height: 100vh;
+  background-image: linear-gradient(45deg, #190361 0%, #bb00ff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_screen1,
+.container_screen2 {
+  width: 300rem;
+  height: 424rem;
+  background-color: white;
+  padding: 48rem 64rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14rem;
+
+  text-align: center;
+}
+
+.container_screen1 h1,
+.container_screen2 h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24rem;
+
+  color: #34355b;
+}
+
+.container_screen1 p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15rem;
+
+  color: #34355b;
+}
+
+.container_screen1 img:hover {
+  animation: shake 0.5s infinite ease;
+  cursor: pointer;
+}
+
+.bg_screen2 {
+  height: 100vh;
+  background-image: linear-gradient(45deg, #190361 0%, #bb00ff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_screen2 p {
+  font-family: "Dancing Script";
+  font-weight: 400;
+  font-size: 24rem;
+  color: #000000;
+
+  background: #e4edf1;
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+  padding: 10rem;
+}
+
+.container_screen2 button {
+  background: #ff9500;
+  border-radius: 4px;
+  padding: 16rem;
+  border: none;
+
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15rem;
+
+  color: #ffffff;
+}
+
+.container_screen2 button:hover {
+  background: #e28400;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(3px, 0, 0);
+  }
+}
+
+@keyframes fadeBox {
+  0% {
+    opacity: 0;
+    scale: 50%;
+  }
+  100% {
+    opacity: 100%;
+    scale: 100%;
+  }
+}
+
+@keyframes changeBg {
+  0% {
+    background-size: 100%;
+    background-position: left;
+  }
+
+  100% {
+    background-size: 200%;
+    background-position: right;
+  }
+}
