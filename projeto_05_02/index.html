@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>BMI calculation</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-wrapper">
+        <h1>Body Mass Index calculator</h1>
+        <form>
+          <label for="weight">Weight (kg)</label>
+          <input type="text" id="weight" placeholder="60" />
+          <label for="height">Height (cm)</label>
+          <input type="text" id="height" placeholder="165" />
+          <button type="submit">
+            Calculate BMI <img src="./img/arrow.svg" alt="arrow" srcset="" />
+          </button>
+        </form>
+
+        <div class="modal hide">
+          <div class="modal-wrapper">
+            <h1></h1>
+            <p></p>
+            <button class="btn-close">
+              <img src="./img/close_modal.svg" alt="x to close modal" />
+            </button>
+          </div>
+        </div>
+
+        <div class="alert-wrapper hide">
+          <p>Type only numbers</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./scripts/script.js" type="module"></script>
+</html>
