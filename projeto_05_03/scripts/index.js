@@ -52,7 +52,7 @@ export function timer() {
         "0"
       );
 
-      secondsDisplay.innerText = "03";
+      secondsDisplay.innerText = "60";
     }
 
     secondsDisplay.innerText = String(secondsDisplay.innerText - 1).padStart(
