@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg: #121214;
+  --hue-value: 0deg;
+  --primary-color: hsla(194, 100%, 63%, 1);
+  --controlsBG-color: hsla(194, 100%, 63%, 0.13);
+  --secondary-color: white;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--color-bg);
+  height: 100vh;
+
+  display: grid;
+}
+
+.main {
+  align-self: end;
+  justify-self: center;
+}
+
+.wrapper_display {
+  font-size: 8.8rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  display: flex;
+}
+
+.wrapper_controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+
+  background: var(--controlsBG-color);
+  border-radius: 999rem;
+  filter: hue-rotate(var(--hue-value));
+
+  margin-top: 1.6rem;
+
+  height: clamp(5rem, 5rem + 20vw, 10.8rem);
+  width: clamp(5rem, 5rem +10vw, 82.8rem);
+}
+
+footer {
+  align-self: end;
+  justify-self: end;
+  padding: 0 4rem 3.2rem 0;
+}
+
+img {
+  cursor: pointer;
+  width: clamp(3rem, 3rem + 20vw, 6.4rem);
+  filter: hue-rotate(var(--hue-value));
+}
+
+.hide {
+  display: none;
+}
