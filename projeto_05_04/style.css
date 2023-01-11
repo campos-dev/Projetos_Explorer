@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-Bg: #ffffff;
+  --color-font: hsla(240, 6%, 21%, 1);
+  --change-hue: 0deg;
+
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 19.2rem;
+}
+
+.timer {
+  font-weight: 700;
+  font-size: 12.6rem;
+  display: flex;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 4.2rem;
+
+  cursor: pointer;
+}
+
+.cards {
+  display: grid;
+  grid-template: "forest rain" "coffeeShop fireplace";
+  gap: 3.2rem;
+
+  cursor: pointer;
+}
+
+.cards forestButton {
+  grid-area: "forest";
+}
+
+.cards rainButton {
+  grid-area: "rain";
+}
+
+.cards coffeeShopButton {
+  grid-area: "coffeeShop";
+}
+
+.cards fireplaceButton {
+  grid-area: "fireplace";
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 52rem) {
+  main {
+    gap: 6rem;
+  }
+  .timer {
+    font-size: 8rem;
+  }
+  .controls {
+    gap: 2rem;
+  }
+  .controls img {
+    width: 3.4rem;
+  }
+  .cards {
+    gap: 1rem;
+  }
+  .cards img {
+    width: 8rem;
+    height: 8rem;
+  }
+}
