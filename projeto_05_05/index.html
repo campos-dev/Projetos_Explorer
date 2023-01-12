@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Focus timer</title>
+  </head>
+  <body class="toggleModes">
+    <img class='toggleMode dark' src="./img/primary/toggleDarkMode.svg" alt="sun icon">
+    <img class='toggleMode light hide' src="./img/secondary/toggleLightMode.svg" alt="moon icon">
+    <main>
+      <div class="timerDisplayWrapper">
+        <div class="timer ">
+          <p id="minutesDisplay">02</p>
+          <p>:</p>
+          <p id="secondsDisplay">00</p>
+        </div>
+        <div class="controls">
+          <img id="playBtn" src="./img/primary/playBtn.svg" alt="play button" />
+          <img
+            id="playBtnSecondary"
+            class="hide"
+            src="./img/secondary/playBtnSecondary.svg"
+            alt="play button"
+          />
+          <img id="stopBtn" src="./img/primary/stopBtn.svg" alt="stop button" />
+          <img
+            id="stopBtnSecondary"
+            class="hide"
+            src="./img/secondary/stopBtnSecondary.svg"
+            alt="stop button"
+          />
+          <img
+            id="addMinutes"
+            src="./img/primary/addMinutes.svg"
+            alt="add minutes button"
+          />
+          <img
+            id="addMinutesSecondary"
+            class="hide"
+            src="./img/secondary/addMinutesSecondary.svg"
+            alt="add minutes button"
+          />
+          <img
+            id="subtractMinutes"
+            src="./img/primary/subtractMinutes.svg"
+            alt="subtract minutes button"
+          />
+          <img
+            id="subtractMinutesSecondary"
+            class="hide"
+            src="./img/secondary/subtractMinutesSecondary.svg"
+            alt="subtract minutes button"
+          />
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card_wrapper forestButton">
+          <img
+            src="./img/primary/forestButton.svg"
+            alt="forest button"
+          />
+          <input type="range" class="volume-control" min="0" max="0">
+        </div>
+        <div class="card_wrapper Secondary forestButton hide"> 
+          <img
+          src="./img/secondary/forestButtonSecondary.svg"
+          alt="forest button"
+        />
+        <input type="range" class="volume-control" min="0" max="100" value="100"/>
+      </div>
+       
+      <div class="card_wrapper rainButton"> 
+        <img
+          src="./img/primary/rainButton.svg"
+          alt="rain button"
+        />
+         <input type="range" class="volume-control" min="0" max="0">
+      </div>
+      <div class="card_wrapper Secondary rainButton hide"> 
+        <img
+          src="./img/secondary/rainButtonSecondary.svg"
+          alt="rain button"
+        />
+        <input type="range" class="volume-control" min="0" max="100" value="100">
+      </div>
+      <div class="card_wrapper coffeeShopButton"> 
+        <img
+          src="./img/primary/coffeeShopButton.svg"
+          alt="coffee shop button"
+        />
+        <input type="range" class="volume-control" min="0" max="0">
+      </div>
+      <div class="card_wrapper Secondary coffeeShopButton hide"> 
+        <img
+          src="./img/secondary/coffeeShopButtonSecondary.svg"
+          alt="coffee shop button"
+        />
+         <input type="range" class="volume-control" min="0" max="100" value="100">
+      </div>
+        <div class="card_wrapper fireplaceButton"> 
+        <img
+          src="./img/primary/fireplaceButton.svg"
+          alt="fireplace button"
+        />
+        <input type="range" class="volume-control"  min="0" max="0">
+      </div>
+      <div class="card_wrapper Secondary fireplaceButton hide"> 
+        <img
+          src="./img/secondary/fireplaceButtonSecondary.svg"
+          alt="fireplace button"
+        />
+        <input type="range" class="volume-control" min="0" max="100" value="100">
+      </div>
+      </div>
+        
+      </div>
+    </main>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-Bg: #ffffff;
+  --color-font: hsla(240, 6%, 21%, 1);
+  --change-hue: 0deg;
+  --card-color: #e1e1e6;
+  --color-secondary: #02799d;
+
+  --color-bg-darkMode: #121214;
+  --color-timer-font: white;
+
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: var(--color-font);
+  display: grid;
+}
+
+.toggleMode {
+  width: 3.6rem;
+  height: 3.6rem;
+  justify-self: end;
+  margin: 7.4rem 7.4rem;
+
+  cursor: pointer;
+}
+
+main {
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 19.2rem;
+}
+
+.timer {
+  font-weight: 700;
+  font-size: 12.6rem;
+  display: flex;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 4.2rem;
+
+  cursor: pointer;
+}
+
+.cards {
+  display: grid;
+  grid-template: "forest rain" "coffeeShop fireplace";
+  gap: 3.2rem;
+
+  cursor: pointer;
+}
+
+.card_wrapper {
+  background-color: var(--card-color);
+  border-radius: 2.4rem;
+  width: 13.8rem;
+  height: 15.2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.card_wrapper img {
+  padding: 2.4rem 0 3.2rem;
+}
+
+.volume-control {
+  width: 9rem;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 9rem;
+  height: 0.3rem;
+  background: var(--color-font);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background: var(--color-font);
+}
+
+input[type="range"]::-moz-range-track {
+  width: 9rem;
+  height: 0.3rem;
+  background: var(--color-font);
+}
+
+input[type="range"]::-moz-range-thumb {
+  height: 1.5rem;
+  width: 1.5rem;
+  border: none;
+  border-radius: 50%;
+  background: var(--color-font);
+}
+
+.cards forestButton {
+  grid-area: "forest";
+}
+
+.cards rainButton {
+  grid-area: "rain";
+}
+
+.cards coffeeShopButton {
+  grid-area: "coffeeShop";
+}
+
+.cards fireplaceButton {
+  grid-area: "fireplace";
+}
+
+.hide {
+  display: none;
+}
+
+.card_wrapper.Secondary {
+  background: var(--color-secondary);
+}
+
+.card_wrapper.Secondary input[type="range"],
+.card_wrapper.Secondary input[type="range"]::-webkit-slider-thumb {
+  background: #ffffff;
+}
+
+/*///////////////////Dark Mode////////////////////*/
+
+body.toggleModes.darkOn {
+  background: var(--color-bg-darkMode);
+}
+
+body.toggleModes.darkOn .timer {
+  color: var(--color-timer-font);
+}
+
+body.toggleModes.darkOn .controls img {
+  filter: brightness(1.5) invert(1) saturate(0.6) hue-rotate(-190deg);
+}
+
+body.toggleModes.darkOn .card_wrapper {
+  filter: brightness(1) saturate(1);
+}
+
+body.toggleModes.darkOn .card_wrapper.Secondary {
+  filter: brightness(1) saturate(0.7) hue-rotate(-10deg);
+}
+
+/*/ ///////////////////////////////////////////*/
+
+@media (max-width: 52rem) {
+  main {
+    height: 40vh;
+    gap: 6rem;
+  }
+  .timer {
+    font-size: 8rem;
+  }
+  .controls {
+    gap: 2rem;
+  }
+  .controls img {
+    width: 3.4rem;
+  }
+  .cards {
+    gap: 1rem;
+  }
+
+  .card_wrapper {
+    width: 8rem;
+    height: 8rem;
+
+    justify-content: end;
+    padding-bottom: 2rem;
+    gap: 0.8rem;
+  }
+
+  .cards img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .card_wrapper img {
+    padding: 1rem;
+  }
+
+  .volume-control {
+    width: 6rem;
+  }
+
+  input[type="range"] {
+    width: 5rem;
+    height: 0.3rem;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+}
