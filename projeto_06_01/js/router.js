@@ -36,7 +36,7 @@ export class Router {
         img.src = "./img/mountains-universe-3.jpg";
         break;
       default:
-        img.src = "/img/mountains-universe-1 1.jpg";
+        img.src = "./img/mountains-universe-1 1.jpg";
         break;
     }
   }
