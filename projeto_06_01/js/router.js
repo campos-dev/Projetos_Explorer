@@ -26,13 +26,13 @@ export class Router {
   changeBgImage(pathname) {
     const img = document.querySelector("body img");
     switch (pathname) {
-      case "/":
+      case "./":
         img.src = "./img/mountains-universe-1 1.jpg";
         break;
-      case "/universe":
+      case "./universe":
         img.src = "./img/mountains-universe-2.jpg";
         break;
-      case "/exploration":
+      case "./exploration":
         img.src = "./img/mountains-universe-3.jpg";
         break;
       default:
