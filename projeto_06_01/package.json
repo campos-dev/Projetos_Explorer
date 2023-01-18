@@ -1,7 +1,7 @@
 {
-  "name": "http://campos-dev.github.io/Projetos_Explorer/projeto_06_01",
+  "name": "projeto_06_01",
   "version": "1.0.0",
-   "homepage": "projeto_06_01/",
+   "homepage": "http://campos-dev.github.io/Projetos_Explorer/projeto_06_01/",
   "description": "",
   "main": "index.js",
   "scripts": {
