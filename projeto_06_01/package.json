@@ -1,6 +1,7 @@
 {
   "name": "projeto_06_01",
   "version": "1.0.0",
+   "homepage": "./",
   "description": "",
   "main": "index.js",
   "scripts": {
