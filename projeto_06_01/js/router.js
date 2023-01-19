@@ -16,7 +16,7 @@ export class Router {
     const { pathname } = window.location;
     const splitPathname = pathname.split("/");
     const lastPath = "/" + splitPathname[splitPathname.length - 1];
-    const route = this.routes[lastPath] || this.routes["/"];
+    const route = this.routes[lastPath] || this.routes[404];
 
     fetch(route)
       .then((data) => data.text())
