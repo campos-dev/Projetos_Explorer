@@ -14,7 +14,11 @@ export class Router {
 
   handle() {
     const { pathname } = window.location;
-    const route = this.routes[pathname] || this.routes[404];
+    const splitPathname = pathname.split("/");
+    console.log(splitPathname);
+    const lastPath = "/" + splitPathname[splitPathname.length - 1];
+    console.log(lastPath);
+    const route = this.routes[lastPath] || this.routes[404];
 
     fetch(route)
       .then((data) => data.text())
