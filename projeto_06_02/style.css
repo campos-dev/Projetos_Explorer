@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+
+  --font-color: #313131;
+  --hue: 200;
+  --primary-color: hsl(var(--hue), 100%, 81%);
+  --bg-odd-row: hsl(var(--hue), 100%, 93%);
+  --bg-even-row: hsl(var(--hue), 100%, 97%);
+  --x-button: #e90000;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+main {
+  color: var(--font-color);
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+.search label {
+  border: 0;
+  clip: rect(1px 1px 1px 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  width: 12rem;
+  margin-left: 5rem;
+  height: 2.6rem;
+  padding-left: 1rem;
+
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+}
+
+.search input:focus {
+  outline-offset: -1px;
+  outline: var(--primary-color) solid 1px;
+}
+
+.search button {
+  height: 2.6rem;
+  padding: 0 0.5rem;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background: var(--primary-color);
+  cursor: pointer;
+}
+
+.search button:hover {
+  filter: opacity(65%);
+}
+
+table {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead td {
+  background: var(--primary-color);
+  padding: 0.5rem 0 0.5rem 1rem;
+
+  font-weight: bold;
+}
+
+table thead td:nth-child(1) {
+  border-radius: 5px 0 0 0;
+}
+
+table thead td:nth-child(4) {
+  border-radius: 0 5px 0 0;
+}
+
+table tbody tr:nth-of-type(odd) {
+  background: var(--bg-odd-row);
+}
+
+table tbody tr:nth-of-type(even) {
+  background: var(--bg-even-row);
+}
+
+table tbody td {
+  padding: 1.5rem 1rem;
+}
+
+table tbody td:first-child {
+  display: flex;
+  align-items: center;
+}
+
+table tbody td a {
+  text-decoration: none;
+  color: var(--font-color);
+
+  padding-left: 1rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+table tbody td a span {
+  font-weight: bold;
+}
+
+table tbody img {
+  width: 5rem;
+  border-radius: 50%;
+}
+
+table tbody button {
+  border: none;
+  background: none;
+
+  font-size: 1.6rem;
+  color: var(--x-button);
+
+  cursor: pointer;
+}
