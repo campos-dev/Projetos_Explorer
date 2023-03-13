@@ -41,7 +41,7 @@ main {
 }
 
 #app {
-  max-width: 112rem;
+  width: min(90%, 92rem);
   margin: 0 2rem;
 }
 
@@ -82,10 +82,8 @@ header input {
   color: var(--text-placeholder);
 
   width: clamp(8rem, 25vw, 30rem);
-
-  font-size: clamp(1rem, 2vw, 1.6rem);
-
   padding-left: clamp(0rem, 1vw, 2rem);
+  font-size: clamp(1rem, 2vw, 1.6rem);
 }
 
 header input:focus {
@@ -128,13 +126,14 @@ header button svg {
 
 table {
   margin: 5.7rem auto 0;
-  /* border: 1px solid var(--outline-color); */
   border-collapse: separate;
   border-spacing: 0;
 
   display: block;
+  /* clear: both; */
+
   max-height: 44rem;
-  width: 100%;
+
   overflow: overlay;
 }
 
@@ -148,6 +147,7 @@ table thead {
 
 table thead th {
   padding: 0 clamp(1rem, 3vw, 4rem);
+  width: 100%;
 }
 
 table thead th:nth-child(1) {
@@ -200,7 +200,7 @@ table tbody a {
   color: var(--text-color);
 }
 
-.container_userNotAdded {
+.userNotAdded {
   height: 22rem;
   background-color: var(--bg-noUsersAdded);
   display: flex;

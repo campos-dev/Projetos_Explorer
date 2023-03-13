@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./js/index.js" type="module" defer></script>
     <title>Github Fav</title>
   </head>
   <body>
@@ -101,130 +102,9 @@
               <th>Remove</th>
             </tr>
           </thead>
-          <tbody class="container_users">
-            <tr>
-              <td>
-                <img
-                  src="https://github.com/maykbrito.png"
-                  alt="picture of Mayk Brito picture"
-                />
-                <a href="https:github.com/maykbrito" target="_blank"
-                  ><span>Mayk Brito</span>
-                  <p>/maykbrito</p></a
-                >
-              </td>
-              <td>123</td>
-              <td>1234</td>
-              <td class="delete">&times;</td>
-            </tr>
-            <tr>
-              <td>
-                <img
-                  src="https://github.com/diego3g.png"
-                  alt="picture of Diego Fernandes"
-                />
-                <a href="https:github.com/diego3g" target="_blank"
-                  ><span>Diego Fernandes</span>
-                  <p>/diego3g</p></a
-                >
-              </td>
-              <td>123</td>
-              <td>1234</td>
-              <td class="delete">&times;</td>
-            </tr>
-            <tr>
-              <td>
-                <img
-                  src="https://github.com/maykbrito.png"
-                  alt="picture of Mayk Brito picture"
-                />
-                <a href="https:github.com/maykbrito" target="_blank"
-                  ><span>Mayk Brito</span>
-                  <p>/maykbrito</p></a
-                >
-              </td>
-              <td>123</td>
-              <td>1234</td>
-              <td class="delete">&times;</td>
-            </tr>
-            <tr>
-              <td>
-                <img
-                  src="https://github.com/diego3g.png"
-                  alt="picture of Diego Fernandes"
-                />
-                <a href="https:github.com/diego3g" target="_blank"
-                  ><span>Diego Fernandes</span>
-                  <p>/diego3g</p></a
-                >
-              </td>
-              <td>123</td>
-              <td>1234</td>
-              <td class="delete">&times;</td>
-            </tr>
-            <tr>
-              <td>
-                <img
-                  src="https://github.com/maykbrito.png"
-                  alt="picture of Mayk Brito picture"
-                />
-                <a href="https:github.com/maykbrito" target="_blank"
-                  ><span>Mayk Brito</span>
-                  <p>/maykbrito</p></a
-                >
-              </td>
-              <td>123</td>
-              <td>1234</td>
-              <td class="delete">&times;</td>
-            </tr>
-            <tr>
-              <td>
-                <img
-                  src="https://github.com/diego3g.png"
-                  alt="picture of Diego Fernandes"
-                />
-                <a href="https:github.com/diego3g" target="_blank"
-                  ><span>Diego Fernandes</span>
-                  <p>/diego3g</p></a
-                >
-              </td>
-              <td>123</td>
-              <td>1234</td>
-              <td class="delete">&times;</td>
-            </tr>
-            <tr>
-              <td>
-                <img
-                  src="https://github.com/maykbrito.png"
-                  alt="picture of Mayk Brito picture"
-                />
-                <a href="https:github.com/maykbrito" target="_blank"
-                  ><span>Mayk Brito</span>
-                  <p>/maykbrito</p></a
-                >
-              </td>
-              <td>123</td>
-              <td>1234</td>
-              <td class="delete">&times;</td>
-            </tr>
-            <tr>
-              <td>
-                <img
-                  src="https://github.com/diego3g.png"
-                  alt="picture of Diego Fernandes"
-                />
-                <a href="https:github.com/diego3g" target="_blank"
-                  ><span>Diego Fernandes</span>
-                  <p>/diego3g</p></a
-                >
-              </td>
-              <td>123</td>
-              <td>1234</td>
-              <td class="delete">&times;</td>
-            </tr>
-          </tbody>
+          <tbody class="users"></tbody>
         </table>
-        <div class="container_userNotAdded hide">
+        <div class="userNotAdded">
           <svg
             width="57"
             height="54"
@@ -239,7 +119,7 @@
               fill="#4E5455"
             />
           </svg>
-          <p>No favorite user yet</p>
+          <p>No favorite users yet</p>
         </div>
       </div>
     </main>
