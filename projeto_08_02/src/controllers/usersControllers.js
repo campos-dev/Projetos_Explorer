@@ -33,7 +33,7 @@ class UsersControllers {
       .where({ email })
       .first();
 
-    if (checkIfEmailAlreadyUsed && checkIfEmailAlreadyUsed.id !== id) {
+    if (checkIfEmailAlreadyUsed && checkIfEmailAlreadyUsed.id !== user.id) {
       throw new AppError("This email was already registered.");
     }
 
