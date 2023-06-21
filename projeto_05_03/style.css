@@ -58,7 +58,7 @@ footer {
 
 img {
   cursor: pointer;
-  width: clamp(3rem, 3rem + 20vw, 6.4rem);
+  width: clamp(1rem, 1rem + 20vw, 6.4rem);
   filter: hue-rotate(var(--hue-value));
 }
 
@@ -67,10 +67,11 @@ img {
 }
 
 @media (max-width: 35rem) {
-  .main {
-    height: 70vh;
-  }
   .wrapper_display {
-    font-size: 6.8rem;
+    font-size: 6rem;
+  }
+  footer {
+    margin-top: -5rem;
+    margin-bottom: 5rem;
   }
 }
