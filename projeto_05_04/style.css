@@ -86,3 +86,9 @@ main {
     height: 8rem;
   }
 }
+
+@media (max-width: 35rem) {
+  main {
+    flex-direction: column;
+  }
+}
