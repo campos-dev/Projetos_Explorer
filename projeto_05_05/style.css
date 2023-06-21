@@ -218,7 +218,7 @@ body.toggleModes.darkOn .card_wrapper.Secondary {
   }
 }
 
-@media (max-width: 30rem) {
+@media (max-width: 35rem) {
   main {
     flex-direction: column;
   }
