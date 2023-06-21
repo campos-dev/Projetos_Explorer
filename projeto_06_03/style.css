@@ -232,3 +232,12 @@ table::-webkit-scrollbar-thumb:vertical {
   background-size: 4px 192px;
   /* background-color: rgba(0, 0, 0, 0.25); */
 }
+
+@media (max-width: 27rem) {
+  table thead {
+    font-size: clamp(0.5rem, 0.6rem + 1vw, 1.6rem);
+  }
+  table tbody img {
+    width: clamp(2.3rem, 3.3rem, 6.6rem);
+  }
+}
