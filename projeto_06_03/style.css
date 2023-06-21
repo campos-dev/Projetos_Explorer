@@ -81,9 +81,9 @@ header input {
   background-color: var(--secondary-color);
   color: var(--text-placeholder);
 
-  width: clamp(8rem, 25vw, 30rem);
+  width: clamp(9rem, 25vw, 30rem);
   padding-left: clamp(0rem, 1vw, 2rem);
-  font-size: clamp(1rem, 2vw, 1.6rem);
+  font-size: clamp(0.8rem, 2vw, 1.8rem);
 }
 
 header input:focus {
