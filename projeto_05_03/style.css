@@ -71,7 +71,15 @@ img {
     font-size: 6rem;
   }
   footer {
-    margin-top: -5rem;
-    margin-bottom: 5rem;
+    margin-top: -7rem;
+    margin-bottom: 7rem;
+    margin-right: 15px;
+  }
+
+  img {
+    width: 5rem;
+  }
+  .wrapper_controls {
+    height: 6.5rem;
   }
 }
